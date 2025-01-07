@@ -1,0 +1,195 @@
+
+ body {
+     min-height: 100vh;
+     min-height: -webkit-fill-available;
+     -moz-osx-font-smoothing: grayscale;
+     -webkit-font-smoothing: antialiased;
+     -moz-font-smoothing: antialiased;
+     -o-font-smoothing: antialiased;
+     text-decoration-thickness: 0.07em !important;
+     text-underline-offset: 0.1em !important;
+     text-underline-position: under;
+ }
+
+ /* Text Selection Color */
+ ::-moz-selection {
+     background: rgba(20, 110, 245, 0.95);
+     color: #FFFFFF;
+ }
+
+ ::selection {
+     background: rgba(20, 110, 245, 0.95);
+     color: #FFFFFF;
+ }
+
+ /* Margin top for headings in rich text elements */
+ .w-richtext>:first-child {
+     margin-top: 0;
+ }
+
+ .w-richtext>:last-child,
+ .w-richtext ol li:last-child,
+ .w-richtext ul li:last-child {
+     margin-bottom: 0;
+ }
+
+ .w-input,
+ .w-select,
+ a {
+     color: inherit;
+     font-size: inherit;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+ }
+
+ /* Global Focus Outline Color - will update to use native focus(keyboard) state */
+ *:focus:not(:focus-visible) {
+     outline: 0;
+ }
+
+ /*----- Button's arrow moving on hover -----*/
+ .card:hover .button-icon_right,
+ .button:hover .button-icon_right {
+     transform: translateX(8px);
+ }
+
+ .card:hover .button-icon_top-right,
+ .button:hover .button-icon_top-right {
+     transform: translate(8px, -8px);
+ }
+
+ /* Truncation utility */
+ .u-truncate-2lines {
+     display: -webkit-box;
+     overflow: hidden;
+     -webkit-line-clamp: 2;
+     -webkit-box-orient: vertical;
+ }
+
+ .u-truncate-3lines {
+     display: -webkit-box;
+     overflow: hidden;
+     -webkit-line-clamp: 3;
+     -webkit-box-orient: vertical;
+ }
+
+ /* Feature content and images opacity on current */
+ .sticky-features_item-anchor+.sticky-features_item-content {
+     opacity: 0.2;
+ }
+
+ .sticky-features_item-anchor+.sticky-features_img-wrapper {
+     opacity: 0;
+ }
+
+ .sticky-features_item-anchor.w--current+div {
+     opacity: 1;
+     z-index: 10;
+ }
+
+ /* Feature tabs transitions */
+ .feature_tab-link.w--current .tab-link_description {
+     opacity: 1;
+     height: auto;
+     transition: opacity .5s ease-out, max-height 1.2s cubic-bezier(.165, .84, .44, 1);
+     display: block;
+ }
+
+ .feature_tab-link.cc-dark.w--current .tab-link_description {
+     color: var(--gray-200);
+ }
+
+ .feature_tab-link.cc-dark.w--current .feature_item-content {
+     color: var(--white);
+ }
+
+.anti-flicker,
+ .anti-flicker * {
+     visibility: hidden !important;
+     opacity: 0 !important;
+ }
+
+[data-wf-hidden-variation],
+ [data-wf-hidden-variation] * {
+     display: none !important;
+ }
+
+
+.anti-flicker,
+ .anti-flicker * {
+     visibility: hidden !important;
+     opacity: 0 !important;
+ }
+ /* Swiper mods */
+ .swiper {
+     overflow: visible;
+ }
+
+ .swiper-button-disabled {
+     color: inherit !important;
+     opacity: 0.3 !important;
+ }
+
+ .swiper-slide.cc-full-slider.cc-center-nav.swiper-slide-active,
+ .swiper-slide.cc-card-slider.cc-center-nav.swiper-slide-active,
+ .swiper-slide.cc-card-slider.cc-center-nav.swiper-slide-next,
+ .swiper-slide.cc-card-slider.cc-center-nav.swiper-slide-next+.swiper-slide {
+     opacity: 1;
+ }
+
+ /* Lowering z-index so that it's below the nav when opened */
+  .w-webflow-badge {
+      z-index: 100 !important;
+  }
+
+  /* Nav styling and focus states  */
+  .g-nav_menu-section_link:focus .g-nav_menu-section_link-heading,
+  .g-nav_menu-section_link-row:focus .g-nav_menu-section_link-heading {
+      text-decoration: underline;
+  }
+
+  .g-nav_menu-section_link:hover .g-nav_menu-beta_tag,
+  .g-nav_menu-section_link:focus .g-nav_menu-beta_tag {
+      text-decoration: none !important;
+  }
+
+  .g-nav *:focus {
+      outline: none !important;
+  }
+
+  .feature_tab-content_wrapper.cc-left {
+       grid-column-end: 1 !important;
+       grid-column-start: 1 !important;
+   }
+
+   /* Feature content and images opacity on current */
+   .sticky-features_item-anchor+.sticky-features_item-content {
+       opacity: 0.2;
+   }
+
+   .sticky-features_item-anchor+.sticky-features_img-wrapper {
+       opacity: 0;
+   }
+
+   .sticky-features_item-anchor.w--current+div {
+       opacity: 1;
+       z-index: 10;
+   }
+
+   /* Truncate */
+   .u-truncate-3lines {
+       display: -webkit-box;
+       overflow: hidden;
+       -webkit-line-clamp: 3;
+       -webkit-box-orient: vertical;
+   }
+
+   .features-dropdown-link_block .tag {
+       text-decoration: none !important;
+   }
+
+        .updates-toaster:has(.w-dyn-items) {
+            display: block;
+        }
+    
+        
